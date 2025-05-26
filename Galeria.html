@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Dazzle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Enlace al CSS principal del sitio -->
+    <link rel="stylesheet" href="CSS/Style1.css">
+    <link rel="stylesheet" href="CSS/Galeria.css">
+</head>
+<body>    
+    <!-- Header section starts -->
+    <header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="Inicio.html" class="Logo">DAZZLE</a>
+    <nav class="navbar">
+        <a href="Inicio.html" id="nav-inicio">Inicio</a>
+        <a href="Nosotros.html" id="nav-nosotros">Nosotros</a>
+        <a href="Galeria.html" id="nav-galeria">Galeria</a>
+        <a href="Contacto.html" id="nav-contacto">Contacto</a>
+        <a href="Blog.html" id="nav-resenas">Reseñas</a>
+    </nav>
+
+    <div class="Icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="https://sites.google.com/view/dyc-technology/inicio" class="fas fa-question-circle" title="Ayuda"></a>
+        <a href="Login.html" class="fas fa-user" title="Iniciar Sesión"></a>
+    </div>
+</header>
+
+    <!-- Header section ends -->
+
+    <!-- Galería section starts -->
+    <section class="gallery" id="gallery">
+        <h1 class="category-heading"><span>Nuestras Colecciones</span></h1>
+        <p class="category-description">Descubre nuestra exclusiva selección de joyas artesanales. Cada pieza está creada con dedicación y materiales de la más alta calidad para resaltar tu elegancia en cada ocasión.</p>
+        
+        <div class="category-container">
+            <!-- Anillos -->
+            <div class="category-box fade-in" style="animation-delay: 0.1s;" onclick="navigateTo('anillos.html')">
+                <img src="IMG/haz una imagen de un anillo de coleccion precioso, en un fondo blanco.jpg" alt="Anillos">
+                <div class="category-info">
+                    <h3 class="title-animation">Anillos</h3>
+                    <p>Descubre nuestra colección de anillos de compromiso, bodas y ocasiones especiales.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+            
+            <!-- Collares -->
+            <div class="category-box fade-in" style="animation-delay: 0.2s;" onclick="navigateTo('collares.html')">
+                <img src="IMG/haz una imagen de un collar de coleccion precioso de diseñador, en un fondo blanco.jpg" alt="Collares">
+                <div class="category-info">
+                    <h3 class="title-animation">Collares</h3>
+                    <p>Elegantes collares que complementarán cualquier atuendo con un toque de sofisticación.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+            
+            <!-- Pendientes -->
+            <div class="category-box fade-in" style="animation-delay: 0.3s;" onclick="navigateTo('pendientes.html')">
+                <img src="IMG/haz una imagen de un par de aretes de coleccion precioso de diseñador, en un fondo blanco.jpg" alt="Pendientes">
+                <div class="category-info">
+                    <h3 class="title-animation">Pendientes</h3>
+                    <p>Desde sutiles y minimalistas hasta llamativos y elegantes para cada ocasión.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+            
+            <!-- Pulseras -->
+            <div class="category-box fade-in" style="animation-delay: 0.4s;" onclick="navigateTo('pulseras.html')">
+                <img src="IMG/haz una imagen de un par de brazaletes de coleccion precioso de diseñador, en un fondo blanco.jpg" alt="Pulseras">
+                <div class="category-info">
+                    <h3 class="title-animation">Brazalete</h3>
+                    <p>Pulseras artesanales con diseños únicos para complementar tu estilo personal.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+            
+            <!-- Relojes -->
+            <div class="category-box fade-in" style="animation-delay: 0.5s;" onclick="navigateTo('relojes.html')">
+                <img src="IMG/haz una imagen de un Reloj de coleccion precioso de diseñado de oro con diamantes, en un fondo blanco.jpg" alt="Relojes">
+                <div class="category-info">
+                    <h3 class="title-animation">Relojes</h3>
+                    <p>Elegancia y precisión en cada pieza. Relojes para toda ocasión.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+            
+            <!-- Oro -->
+            <div class="category-box fade-in" style="animation-delay: 0.6s;" onclick="navigateTo('oro.html')">
+                <img src="IMG/haz una imagen de una collecion de joyas de oro.jpg" alt="Colección Oro">
+                <div class="category-info">
+                    <h3 class="title-animation">Colección Oro</h3>
+                    <p>Lo mejor en joyería de oro de 18k con diseños exclusivos y contemporáneos.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+            
+            <!-- Plata -->
+            <div class="category-box fade-in" style="animation-delay: 0.7s;" onclick="navigateTo('plata.html')">
+                <img src="IMG/haz una imagen de una collecion de joyas de plata, mas sofisticado.jpg" alt="Colección Plata">
+                <div class="category-info">
+                    <h3 class="title-animation">Colección Plata</h3>
+                    <p>Elegantes piezas de plata esterlina con acabados de alta calidad.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+            
+            <!-- Personalizado -->
+            <div class="category-box fade-in" style="animation-delay: 0.8s;" onclick="navigateTo('personalizado.html')">
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixid=MnwxfDB8MXxyYW5kb218MHx8amV3ZWxyeSBjdXN0b218fHx8fHwxNjg2NDI1NDQ1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=800" alt="Personalizado">
+                <div class="category-info">
+                    <h3 class="title-animation">Diseño Personalizado</h3>
+                    <p>Crea una joya única según tus especificaciones y gustos personales.</p>
+                    <a href="#" class="category-btn">Ver Colección</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Galería section ends -->
+
+    <!-- Notificación de navegación -->
+    <div class="navigation-notification" id="notification">
+        Navegando a: <span id="navigation-text"></span>
+    </div>
+
+    <!-- Footer section starts -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Acerca de Dazzle</h3>
+                <p>Somos una empresa dedicada a ofrecer joyas de alta calidad, combinando elegancia y sostenibilidad en cada pieza.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Email: contacto@dazzle.com</p>
+                <p>Teléfono: +123 456 7890</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/MaterialMaestros/photos/pcb.1667775266763569/1667774393430323"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/es/"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Dazzle. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Footer section ends -->
+
+    <script>
+        // Función para simular navegación a otra página
+        function navigateTo(page) {
+            // En una implementación real, esto redireccionaría a la página
+            // window.location.href = page;
+            
+            // Para demostración, muestra una notificación
+            const notification = document.getElementById('notification');
+            const navigationText = document.getElementById('navigation-text');
+            
+            navigationText.textContent = page;
+            notification.style.display = 'block';
+            
+            // Ocultar después de 3 segundos
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, 3000);
+        }
+        
+        // Animación de entrada para las tarjetas
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryBoxes = document.querySelectorAll('.category-box');
+            categoryBoxes.forEach((box, index) => {
+                setTimeout(() => {
+                    box.style.opacity = '1';
+                    box.style.transform = 'translateY(0)';
+                }, index * 100); // Escalonado por 100ms
+            });
+        });
+    </script>
+</body>
+</html>

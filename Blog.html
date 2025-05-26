@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas | Dazzle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Style1.css">
+    <link rel="stylesheet" href="CSS/Blog.css">
+</head>
+<body>
+    <!-- Header section starts -->
+    <header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="Inicio.html" class="Logo">DAZZLE</a>
+    <nav class="navbar">
+        <a href="Inicio.html" id="nav-inicio">Inicio</a>
+        <a href="Nosotros.html" id="nav-nosotros">Nosotros</a>
+        <a href="Galeria.html" id="nav-galeria">Galeria</a>
+        <a href="Contacto.html" id="nav-contacto">Contacto</a>
+        <a href="Blog.html" id="nav-resenas">Reseñas</a>
+    </nav>
+
+    <div class="Icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="https://sites.google.com/view/dyc-technology/inicio" class="fas fa-question-circle" title="Ayuda"></a>
+        <a href="Login.html" class="fas fa-user" title="Iniciar Sesión"></a>
+    </div>
+</header>
+
+    <!-- Header section ends -->
+
+    <!-- Hero section starts -->
+    <section class="reviews-hero" id="reviews-hero">
+        <div class="reviews-hero-content">
+            <h1 class="section-title"><span>Nuestras Reseñas</span></h1>
+            <p class="reviews-description">Descubre lo que nuestros clientes opinan sobre nuestras joyas y servicios. Nos enorgullece la satisfacción de quienes confían en nuestro trabajo.</p>
+        </div>
+    </section>
+    <!-- Hero section ends -->
+
+    <!-- Rating summary section starts -->
+    <section class="rating-summary" id="rating-summary">
+        <div class="rating-container fade-in">
+            <div class="rating-header">
+                <div class="rating-logo">
+                    <img src="IMG/icono_anillo-removebg-preview.png" alt="Google">
+                    <span>Rating</span>
+                </div>
+                <div class="rating-score">
+                    <span class="score">4.9</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="reviews-count">Basado en 59 reseñas</span>
+                </div>
+                <a href="#write-review" class="btn-review shine-effect">Escribir una Reseña</a>
+            </div>
+            
+            <div class="rating-stats">
+                <div class="stat-bar">
+                    <span class="star-label">5 <i class="fas fa-star"></i></span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                    <span class="percentage">85%</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="star-label">4 <i class="fas fa-star"></i></span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 12%"></div>
+                    </div>
+                    <span class="percentage">12%</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="star-label">3 <i class="fas fa-star"></i></span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 2%"></div>
+                    </div>
+                    <span class="percentage">2%</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="star-label">2 <i class="fas fa-star"></i></span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 1%"></div>
+                    </div>
+                    <span class="percentage">1%</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="star-label">1 <i class="fas fa-star"></i></span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                    <span class="percentage">0%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Rating summary section ends -->
+
+    <!-- Reviews section starts -->
+    <section class="reviews-section" id="reviews">
+        <div class="diamond-divider">
+            <div class="diamond-line">
+                <span class="diamond-icon"><i class="fas fa-gem"></i></span>
+            </div>
+        </div>
+        
+        <div class="reviews-container">
+            <div class="review-filters">
+                <select id="sort-reviews">
+                    <option value="recent">Más recientes primero</option>
+                    <option value="highest">Mayor calificación primero</option>
+                    <option value="lowest">Menor calificación primero</option>
+                </select>
+                
+                <div class="filter-stars">
+                    <button class="active" data-stars="all">Todas</button>
+                    <button data-stars="5">5 <i class="fas fa-star"></i></button>
+                    <button data-stars="4">4 <i class="fas fa-star"></i></button>
+                    <button data-stars="3">3 <i class="fas fa-star"></i></button>
+                    <button data-stars="2">2 <i class="fas fa-star"></i></button>
+                    <button data-stars="1">1 <i class="fas fa-star"></i></button>
+                </div>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card fade-in" style="--delay: 0.1s;" data-rating="5">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana García">
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Ana García</h3>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="review-date">15 de octubre, 2023</span>
+                            </div>
+                        </div>
+                        <div class="google-badge">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIuNTYgMTIuMjVjMC0uNzgtLjA3LTEuNTMtLjItMi4yNUgxMnY0LjI2aDUuOTJjLS4yNiAxLjM3LTEuMDQgMi41My0yLjIxIDMuMzF2Mi43N2gzLjU3Yy4yMS0uMzMgNC4zMS03LjkgMy4yOC0xMS4wOXoiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTIgMjNjMi45NyAwIDUuNDYtLjk4IDcuMjgtMi42NmwtMy41Ny0yLjc3Yy0uOTguNjYtMi4yMyAxLjA2LTMuNzEgMS4wNi0yLjg2IDAtNS4yOS0xLjkzLTYuMTYtNC41M0gyLjE4djIuODRDMy45OSAyMC41MyA3LjcgMjMgMTIgMjN6Ii8+PHBhdGggZmlsbD0iI0ZCQkMwNSIgZD0iTTUuODQgMTQuMDljLS41Ny0xLjctLjU3LTMuNTUgMC01LjI0VjUuOTVIMi4xOEMuODYgOC4xNyAwIDEwLjUzIDAgMTNjMCAyLjQ3LjgzIDQuODQgMi4xOCA3LjA3bDMuNjYtMi44NHoiLz48cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgNS4yOGMyLjEyIDAgMy4wNi45OCAzLjYgMS44bDMuMDQtMy4wQzE2Ljg0IDIuNSAxNC4zOSAxIDEyIDEgNy43IDEgMy45OSAzLjQ3IDIuMTggNy4wN2wzLjY2IDIuODRjLjg3LTIuNiAzLjMtNC41MyA2LjE2LTQuNTN6Ii8+PC9zdmc+" alt="Google">
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Quedé encantada con el anillo de compromiso que compré para mi pareja. La atención personalizada fue excepcional y me ayudaron a encontrar exactamente lo que estaba buscando. ¡100% recomendado!</p>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card fade-in" style="--delay: 0.2s;" data-rating="5">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">
+                                <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Carlos Mendoza">
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Carlos Mendoza</h3>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="review-date">2 de octubre, 2023</span>
+                            </div>
+                        </div>
+                        <div class="google-badge">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIuNTYgMTIuMjVjMC0uNzgtLjA3LTEuNTMtLjItMi4yNUgxMnY0LjI2aDUuOTJjLS4yNiAxLjM3LTEuMDQgMi41My0yLjIxIDMuMzF2Mi43N2gzLjU3Yy4yMS0uMzMgNC4zMS03LjkgMy4yOC0xMS4wOXoiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTIgMjNjMi45NyAwIDUuNDYtLjk4IDcuMjgtMi42NmwtMy41Ny0yLjc3Yy0uOTguNjYtMi4yMyAxLjA2LTMuNzEgMS4wNi0yLjg2IDAtNS4yOS0xLjkzLTYuMTYtNC41M0gyLjE4djIuODRDMy45OSAyMC41MyA3LjcgMjMgMTIgMjN6Ii8+PHBhdGggZmllbD0iI0ZCQkMwNSIgZD0iTTUuODQgMTQuMDljLS41Ny0xLjctLjU3LTMuNTUgMC01LjI0VjUuOTVIMi4xOEMuODYgOC4xNyAwIDEwLjUzIDAgMTNjMCAyLjQ3LjgzIDQuODQgMi4xOCA3LjA3bDMuNjYtMi44NHoiLz48cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgNS4yOGMyLjEyIDAgMy4wNi45OCAzLjYgMS44bDMuMDQtMy4wQzE2Ljg0IDIuNSAxNC4zOSAxIDEyIDEgNy43IDEgMy45OSAzLjQ3IDIuMTggNy4wN2wzLjY2IDIuODRjLjg3LTIuNiAzLjMtNC41MyA2LjE2LTQuNTN6Ii8+PC9zdmc+" alt="Google">
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Excelente servicio. Me encantó la tienda y la calidad de sus productos. Compré un collar para el aniversario con mi esposa y quedó fascinada. El grabado personalizado fue la cereza del pastel.</p>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card fade-in" style="--delay: 0.3s;" data-rating="4">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Laura Fernández">
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Laura Fernández</h3>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="review-date">15 de septiembre, 2023</span>
+                            </div>
+                        </div>
+                        <div class="google-badge">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIuNTYgMTIuMjVjMC0uNzgtLjA3LTEuNTMtLjItMi4yNUgxMnY0LjI2aDUuOTJjLS4yNiAxLjM3LTEuMDQgMi41My0yLjIxIDMuMzF2Mi43N2gzLjU3Yy4yMS0uMzMgNC4zMS03LjkgMy4yOC0xMS4wOXoiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTIgMjNjMi45NyAwIDUuNDYtLjk4IDcuMjgtMi42NmwtMy41Ny0yLjc3Yy0uOTguNjYtMi4yMyAxLjA2LTMuNzEgMS4wNi0yLjg2IDAtNS4yOS0xLjkzLTYuMTYtNC41M0gyLjE4djIuODRDMy45OSAyMC41MyA3LjcgMjMgMTIgMjN6Ii8+PHBhdGggZmlsbD0iI0ZCQkMwNSIgZD0iTTUuODQgMTQuMDljLS41Ny0xLjctLjU3LTMuNTUgMC01LjI0VjUuOTVIMi4xOEMuODYgOC4xNyAwIDEwLjUzIDAgMTNjMCAyLjQ3LjgzIDQuODQgMi4xOCA3LjA3bDMuNjYtMi44NHoiLz48cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgNS4yOGMyLjEyIDAgMy4wNi45OCAzLjYgMS44bDMuMDQtMy4wQzE2Ljg0IDIuNSAxNC4zOSAxIDEyIDEgNy43IDEgMy45OSAzLjQ3IDIuMTggNy4wN2wzLjY2IDIuODRjLjg3LTIuNiAzLjMtNC41MyA2LjE2LTQuNTN6Ii8+PC9zdmc+" alt="Google">
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Buenos productos y un ambiente muy acogedor. El personal es muy amable, aunque tuve que esperar un poco más de lo esperado para que me atendieran. Las pulseras son hermosas y de gran calidad.</p>
+                    </div>
+                </div>
+                
+                <!-- Review 4 -->
+                <div class="review-card fade-in" style="--delay: 0.4s;" data-rating="5">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Roberto Sánchez">
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Roberto Sánchez</h3>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="review-date">28 de agosto, 2023</span>
+                            </div>
+                        </div>
+                        <div class="google-badge">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIuNTYgMTIuMjVjMC0uNzgtLjA3LTEuNTMtLjItMi4yNUgxMnY0LjI2aDUuOTJjLS4yNiAxLjM3LTEuMDQgMi41My0yLjIxIDMuMzF2Mi43N2gzLjU3Yy4yMS0uMzMgNC4zMS03LjkgMy4yOC0xMS4wOXoiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTIgMjNjMi45NyAwIDUuNDYtLjk4IDcuMjgtMi42NmwtMy41Ny0yLjc3Yy0uOTguNjYtMi4yMyAxLjA2LTMuNzEgMS4wNi0yLjg2IDAtNS4yOS0xLjkzLTYuMTYtNC41M0gyLjE4djIuODRDMy45OSAyMC41MyA3LjcgMjMgMTIgMjN6Ii8+PHBhdGggZmlsbD0iI0ZCQkMwNSIgZD0iTTUuODQgMTQuMDljLS41Ny0xLjctLjU3LTMuNTUgMC01LjI0VjUuOTVIMi4xOEMuODYgOC4xNyAwIDEwLjUzIDAgMTNjMCAyLjQ3LjgzIDQuODQgMi4xOCA3LjA3bDMuNjYtMi44NHoiLz48cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgNS4yOGMyLjEyIDAgMy4wNi45OCAzLjYgMS44bDMuMDQtMy4wQzE2Ljg0IDIuNSAxNC4zOSAxIDEyIDEgNy43IDEgMy45OSAzLjQ3IDIuMTggNy4wN2wzLjY2IDIuODRjLjg3LTIuNiAzLjMtNC41MyA2LjE2LTQuNTN6Ii8+PC9zdmc+" alt="Google">
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Dazzle tiene las mejores joyas de la ciudad. Compré unos aretes para mi madre y no podría estar más feliz con el resultado. La atención es de primera y los precios son justos por la calidad que ofrecen.</p>
+                    </div>
+                </div>
+                
+                <!-- Review 5 -->
+                <div class="review-card fade-in" style="--delay: 0.5s;" data-rating="5">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">
+                                <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="María Rodríguez">
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">María Rodríguez</h3>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="review-date">15 de agosto, 2023</span>
+                            </div>
+                        </div>
+                        <div class="google-badge">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIuNTYgMTIuMjVjMC0uNzgtLjA3LTEuNTMtLjItMi4yNUgxMnY0LjI2aDUuOTJjLS4yNiAxLjM3LTEuMDQgMi41My0yLjIxIDMuMzF2Mi43N2gzLjU3Yy4yMS0uMzMgNC4zMS03LjkgMy4yOC0xMS4wOXoiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTIgMjNjMi45NyAwIDUuNDYtLjk4IDcuMjgtMi42NmwtMy41Ny0yLjc3Yy0uOTguNjYtMi4yMyAxLjA2LTMuNzEgMS4wNi0yLjg2IDAtNS4yOS0xLjkzLTYuMTYtNC41M0gyLjE4djIuODRDMy45OSAyMC41MyA3LjcgMjMgMTIgMjN6Ii8+PHBhdGggZmlsbD0iI0ZCQkMwNSIgZD0iTTUuODQgMTQuMDljLS41Ny0xLjctLjU3LTMuNTUgMC01LjI0VjUuOTVIMi4xOEMuODYgOC4xNyAwIDEwLjUzIDAgMTNjMCAyLjQ3LjgzIDQuODQgMi4xOCA3LjA3bDMuNjYtMi44NHoiLz48cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgNS4yOGMyLjEyIDAgMy4wNi45OCAzLjYgMS44bDMuMDQtMy4wQzE2Ljg0IDIuNSAxNC4zOSAxIDEyIDEgNy43IDEgMy45OSAzLjQ3IDIuMTggNy4wN2wzLjY2IDIuODRjLjg3LTIuNiAzLjMtNC41MyA2LjE2LTQuNTN6Ii8+PC9zdmc+" alt="Google">
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>¡Impresionante experiencia! He comprado varias piezas en Dazzle y siempre me sorprenden con su elegancia y calidad. El servicio de limpieza y mantenimiento es excepcional, mis joyas siempre lucen como nuevas.</p>
+                    </div>
+                </div>
+                
+                <!-- Review 6 -->
+                <div class="review-card fade-in" style="--delay: 0.6s;" data-rating="3">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">
+                                <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Javier López">
+                            </div>
+                            <div class="reviewer-details">
+                                <h3 class="reviewer-name">Javier López</h3>
+                                <div class="review-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="review-date">2 de agosto, 2023</span>
+                            </div>
+                        </div>
+                        <div class="google-badge">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjNDI4NUY0IiBkPSJNMjIuNTYgMTIuMjVjMC0uNzgtLjA3LTEuNTMtLjItMi4yNUgxMnY0LjI2aDUuOTJjLS4yNiAxLjM3LTEuMDQgMi41My0yLjIxIDMuMzF2Mi43N2gzLjU3Yy4yMS0uMzMgNC4zMS03LjkgMy4yOC0xMS4wOXoiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTIgMjNjMi45NyAwIDUuNDYtLjk4IDcuMjgtMi42NmwtMy41Ny0yLjc3Yy0uOTguNjYtMi4yMyAxLjA2LTMuNzEgMS4wNi0yLjg2IDAtNS4yOS0xLjkzLTYuMTYtNC41M0gyLjE4djIuODRDMy45OSAyMC41MyA3LjcgMjMgMTIgMjN6Ii8+PHBhdGggZmlsbD0iI0ZCQkMwNSIgZD0iTTUuODQgMTQuMDljLS41Ny0xLjctLjU3LTMuNTUgMC01LjI0VjUuOTVIMi4xOEMuODYgOC4xNyAwIDEwLjUzIDAgMTNjMCAyLjQ3LjgzIDQuODQgMi4xOCA3LjA3bDMuNjYtMi44NHoiLz48cGF0aCBmaWxsPSIjRUE0MzM1IiBkPSJNMTIgNS4yOGMyLjEyIDAgMy4wNi45OCAzLjYgMS44bDMuMDQtMy4wQzE2Ljg0IDIuNSAxNC4zOSAxIDEyIDEgNy43IDEgMy45OSAzLjQ3IDIuMTggNy4wN2wzLjY2IDIuODRjLjg3LTIuNiAzLjMtNC41MyA2LjE2LTQuNTN6Ii8+PC9zdmc+" alt="Google">
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>Las joyas son bonitas, pero el tiempo de entrega fue mayor al prometido. Tuve que esperar dos semanas más de lo indicado para recibir mi encargo. La calidad es buena, pero deberían mejorar sus tiempos de entrega.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews section ends -->
+
+    <!-- Write review section starts -->
+    <section class="write-review-section" id="write-review">
+        <div class="write-review-container fade-in" style="--delay: 0.3s;">
+            <h2 class="section-title"><span>Tu Opinión es Importante</span></h2>
+            <p class="write-review-description">Nos encantaría conocer tu experiencia con nuestros productos y servicios. Tu opinión nos ayuda a mejorar y a seguir creando joyas que enamoren.</p>
+            
+            <form class="review-form">
+                <div class="form-group">
+                    <label for="name">Tu Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Tu Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Tu Calificación</label>
+                    <div class="rating-select">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5"><i class="fas fa-star"></i></label>
+                        
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"><i class="fas fa-star"></i></label>
+                        
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"><i class="fas fa-star"></i></label>
+                        
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"><i class="fas fa-star"></i></label>
+                        
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"><i class="fas fa-star"></i></label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review">Tu Reseña</label>
+                    <textarea id="review" name="review" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group photo-upload">
+                    <label>Añadir foto (opcional)</label>
+                    <div class="upload-container">
+                        <input type="file" id="photo" name="photo" accept="image/*">
+                        <label for="photo" class="upload-button">
+                            <i class="fas fa-camera"></i> Seleccionar Imagen
+                        </label>
+                        <div class="preview-container"></div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-submit shine-effect">Enviar Reseña</button>
+            </form>
+        </div>
+    </section>
+    <!-- Write review section ends -->
+
+    <!-- Footer section starts -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Acerca de Dazzle</h3>
+                <p>Somos una empresa dedicada a ofrecer joyas de alta calidad, combinando elegancia y sostenibilidad en cada pieza.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Galeria.html">Galería</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Resenas.html">Reseñas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p>Email: contacto@dazzle.com</p>
+                <p>Teléfono: +123 456 7890</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/MaterialMaestros/photos/pcb.1667775266763569/1667774393430323"><img src="IMG/descarga_3-removebg-preview.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="IMG/descarga_2-removebg-preview.png" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/es/"><img src="IMG/descarga__1_-removebg-preview.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Dazzle. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Footer section ends -->
+
+    <!-- Thanks modal -->
+    <div class="modal" id="thanks-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>¡Gracias por tu reseña!</h3>
+            <p>Tu opinión ha sido enviada correctamente y será publicada después de ser revisada.</p>
+            <button class="btn modal-btn">Aceptar</button>
+        </div>
+    </div>
+
+    <script>
+        // Script para activar las animaciones al hacer scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            // Función para verificar si un elemento está en el viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85
+                );
+            }
+            
+            // Animar elementos al hacer scroll
+            function animateOnScroll() {
+                const fadeElements = document.querySelectorAll('.fade-in');
+                
+                fadeElements.forEach(element => {
+                    if (isInViewport(element) && !element.classList.contains('visible')) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+            
+            // Ejecutar al cargar y al hacer scroll
+            animateOnScroll();
+            window.addEventListener('scroll', animateOnScroll);
+            
+            // Filtrado de reseñas
+            const filterButtons = document.querySelectorAll('.filter-stars button');
+            const reviewCards = document.querySelectorAll('.review-card');
+            const sortSelect = document.getElementById('sort-reviews');
+            
+            // Filtrar por estrellas
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Desactivar todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Activar el botón clickeado
+                    button.classList.add('active');
+                    
+                    const stars = button.getAttribute('data-stars');
+                    
+                    reviewCards.forEach(card => {
+                        if (stars === 'all' || card.getAttribute('data-rating') === stars) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Ordenar reseñas
+            if (sortSelect) {
+                sortSelect.addEventListener('change', () => {
+                    const value = sortSelect.value;
+                    const reviewsContainer = document.querySelector('.reviews-grid');
+                    const reviews = Array.from(reviewCards);
+                    
+                    if (value === 'recent') {
+                        // Ordenar por fecha más reciente (asumiendo que están en orden)
+                        reviewsContainer.innerHTML = '';
+                        reviews.forEach(review => {
+                            reviewsContainer.appendChild(review);
+                        });
+                    } else if (value === 'highest') {
+                        // Ordenar por mayor calificación
+                        reviews.sort((a, b) => {
+                            return parseInt(b.getAttribute('data-rating')) - parseInt(a.getAttribute('data-rating'));
+                        });
+                        
+                        reviewsContainer.innerHTML = '';
+                        reviews.forEach(review => {
+                            reviewsContainer.appendChild(review);
+                        });
+                    } else if (value === 'lowest') {
+                        // Ordenar por menor calificación
+                        reviews.sort((a, b) => {
+                            return parseInt(a.getAttribute('data-rating')) - parseInt(b.getAttribute('data-rating'));
+                        });
+                        
+                        reviewsContainer.innerHTML = '';
+                        reviews.forEach(review => {
+                            reviewsContainer.appendChild(review);
+                        });
+                    }
+                });
+            }
+            
+            // Paginación (simulada)
+            const paginationButtons = document.querySelectorAll('.pagination button');
+            
+            paginationButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    paginationButtons.forEach(btn => btn.classList.remove('active'));
+                    if (!button.classList.contains('next')) {
+                        button.classList.add('active');
+                    }
+                    
+                    // Aquí iría la lógica para cargar más reseñas
+                    // Por ahora solo es visual
+                });
+            });
+            
+            // Previsualización de imagen
+            const photoInput = document.getElementById('photo');
+            const previewContainer = document.querySelector('.preview-container');
+            
+            if (photoInput) {
+                photoInput.addEventListener('change', function() {
+                    previewContainer.innerHTML = '';
+                    
+                    if (this.files && this.files[0]) {
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            const preview = document.createElement('div');
+                            preview.className = 'image-preview';
+                            preview.innerHTML = `
+                                <img src="${e.target.result}" alt="Preview">
+                                <button type="button" class="remove-image"><i class="fas fa-times"></i></button>
+                            `;
+                            
+                            previewContainer.appendChild(preview);
+                            
+                            // Remover imagen
+                            const removeButton = preview.querySelector('.remove-image');
+                            removeButton.addEventListener('click', function() {
+                                preview.remove();
+                                photoInput.value = '';
+                            });
+                        }
+                        
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                });
+            }
+            
+            // Envío del formulario
+            const reviewForm = document.querySelector('.review-form');
+            const thanksModal = document.getElementById('thanks-modal');
+            const closeModal = document.querySelector('.close-modal');
+            const modalBtn = document.querySelector('.modal-btn');
+            
+            if (reviewForm) {
+                reviewForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Aquí iría el código para enviar el formulario
+                    
+                    // Mostrar modal de agradecimiento
+                    thanksModal.style.display = 'flex';
+                    
+                    // Limpiar el formulario
+                    reviewForm.reset();
+                    previewContainer.innerHTML = '';
+                });
+            }
+            
+            // Cerrar el modal
+            if (closeModal) {
+                closeModal.addEventListener('click', function() {
+                    thanksModal.style.display = 'none';
+                });
+            }
+            
+            if (modalBtn) {
+                modalBtn.addEventListener('click', function() {
+                    thanksModal.style.display = 'none';
+                });
+            }
+            
+            // Cerrar el modal si se hace clic fuera de él
+            window.addEventListener('click', function(event) {
+                if (event.target == thanksModal) {
+                    thanksModal.style.display = 'none';
+                }
+            });
+            
+            // Animación para las estrellas de calificación
+            const ratingLabels = document.querySelectorAll('.rating-select label');
+            
+            ratingLabels.forEach((label, index) => {
+                label.addEventListener('mouseover', () => {
+                    // Iluminar la estrella actual y todas las anteriores
+                    for (let i = 0; i <= index; i++) {
+                        ratingLabels[i].classList.add('hover');
+                    }
+                    
+                    // Apagar todas las estrellas después
+                    for (let i = index + 1; i < ratingLabels.length; i++) {
+                        ratingLabels[i].classList.remove('hover');
+                    }
+                });
+                
+                label.addEventListener('mouseout', () => {
+                    // Restaurar estrellas basado en la selección actual
+                    const selectedRating = document.querySelector('.rating-select input:checked');
+                    
+                    if (selectedRating) {
+                        const value = parseInt(selectedRating.value);
+                        
+                        ratingLabels.forEach((l, i) => {
+                            if (i < value) {
+                                l.classList.add('selected');
+                            } else {
+                                l.classList.remove('selected');
+                            }
+                            l.classList.remove('hover');
+                        });
+                    } else {
+                        // Si no hay selección, quitar todos los estilos
+                        ratingLabels.forEach(l => {
+                            l.classList.remove('hover', 'selected');
+                        });
+                    }
+                });
+                
+                // Manejar clic en estrellas
+                const input = document.getElementById(`star${5 - index}`);
+                
+                input.addEventListener('change', () => {
+                    const value = parseInt(input.value);
+                    
+                    ratingLabels.forEach((l, i) => {
+                        if (i < value) {
+                            l.classList.add('selected');
+                        } else {
+                            l.classList.remove('selected');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
